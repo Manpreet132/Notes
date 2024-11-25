@@ -1,0 +1,19 @@
+AWS CodePipeline- AWS CodePipeline automatically builds, tests, and deploys the application to the target on-premise whenever the programmer makes any change in the code. This feature is mostly responsible for continuous integration and continuous delivery.
+AWS CodeBuild- AWS CodeBuild is a granular code building tool that is fully managed in order to build source codes, run tests, and make ready to deploy software packages
+AWS CodeDeploy- This is an automated code deployment mechanism that makes AWS deploy your applications to an on-premise at any instance. This is strategic in releasing new features in a time and cost-efficient manner, avoiding any downtime or software challenges during such updates. 
+AWS CodeStar- AWS CodeStar provides a unified user interface that enables you to develop and deploy applications fast on AWS. With this feature, you can build the entire delivery toolchain at once since CodeStar lets you manage all aspects of software management in one place. 
+AWS CodeCommit- This feature enables organizations to host and securely store private Git repositories. This makes AWS DevOps work seamlessly with GIT tools without the intervention of the developer to manage their source control systems. 
+
+CloudFormation is like Terraform .
+Amazon Cognito: Provides user authentication, authorization, and user management for applications.
+System Manager offers unified interface for managing resources and operational tasks.
+Amazon Cognito: Provides user authentication, authorization, and user management for applications.
+Amazon Redshift: A fully managed data warehousing service for analyzing large datasets.
+Amazon Kinesis: Collects, processes, and analyzes real-time streaming data.
+AWS Glue: Extracts, transforms, and loads data from various sources for analysis.
+Security group can be attached to multiple instances.
+Default Deny: By default, Security Groups follow a "deny all" rule, meaning that inbound and outbound traffic is denied unless explicitly allowed through defined rules.
+ALB operates at 7th layer and NLB opeartes at 4ht layer.
+NLB is suitable for applications that require extreme performance, such as high-throughput applications, gaming applications, or real-time streaming.
+ALB is ideal for applications that require advanced routing capabilities, such as microservices-based architectures..
+Roles are similar to users, but they are not associated with specific individuals. Roles are typically assigned to AWS resources, such as EC2 instances or Lambda functions, and are assumed by trusted entities to access AWS services. Roles are useful when you want to grant temporary permissions to external services or provide access across different AWS accounts

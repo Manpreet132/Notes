@@ -1,0 +1,55 @@
+`.java to compile with.class to .jar and build to user.
+Artifact is the name of the project.
+POM: PROJECT OBJECT MODEL.
+After maven install , build is made with .jar file.
+Jenkins is integration tool,we can connect github,maven etc. with it using their plugins.
+POM.xml is maven file.
+90%of devops engineers are ,cloud engineers.
+First authentication is done ,then authorization is done.
+Kubectl is a command-line interface (CLI) tool used to interact with a Kubernetes cluster.
+TargetPort means routing traffic.
+Service is a Kubernetes object that provides a stable IP address and DNS name for a set of Pods. Services enable communication between different parts
+of an application, both within the Kubernetes cluster and outside it.
+
+Terraform is for system provisioning and ansible is for system configuration.
+Difference between Ansible and Chef?
+Cookbook in chef and playbook in ansible.
+Recipe in chef and module in ansible.
+It is agent based and it is agent less.
+It works on pull mechanism and it works on push mechanism.
+Fact gathering?
+Ansible playbook?
+Syntax of Ansible playbook?: 2 dash at starting.
+Ansible playbook commands are:
+ansible-playbook playbook-name.yml
+which httpd?
+sudo service httpd status?
+Handlers and Roles are advanced playbook concepts?
+
+No two services can use same port number.
+In roles we can make multiple playbooks and in those we can run multiple tasks.
+And combine them in master playbook and run again.
+yum works on redhat.
+apt works on Ubuntu.
+
+Terraform is tool owned by Hashicorp.
+It provisions the servers within 30sec ,beside takes hours.
+Terraform uses HCL language.
+It is like JSON.
+Always save your installations in separate folder.
+Create access key in IAM user and download as csv file.
+You don't have to remeber any code in terraform , everything is already provided in the form of templates.
+Commands:
+terraform init
+terraform validate: To check whether the code is right.
+terraform plan: will interpret each thing in your script.
+terraform apply: will provision resources.
+terraform destroy: to delete all the resources.
+Terraform uses declarative appraoch.Imperative vs Declarative approach?
+Use of variables in terraform.
+
+Prometheus,Grafnna,AlertManager,Node Exporter are used for system monitoring purpose in production phase.
+Metrics collection,Dashboard visualization,Alert notification,win populate metric are uses.
+
+Major project is ased on ECS and EKS.
+

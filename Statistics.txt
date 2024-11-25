@@ -1,0 +1,168 @@
+Data is facts , specially numerical facts collected together for refrence or information.
+Information in knowledge communicated  concerning some particular facts.
+
+Statistics is of 2 major types:
+Descriptive Statistics is presenting , organizing and summarizing data.
+Inferential statistics is drawing conclusions about a population base don data observed in sample. 
+EDA is in descriptive analysis.
+ML,DL is in inferential statistics.
+
+Primary vs Secondary Dataset?
+Primary Dataset is user generated and secondary dataset is other party's generated. Primary dataset is expensive and time consuming because it is original. 
+
+Diversity bring the innovation.
+
+Sampling techniques is of 2 types:
+Probability Sampling: Simple Random, Stratified Random, Cluster Sampling, Systematic Sampling, MultiStage Sampling.
+Non Probability Sampling:  Quota Sampling, Snowball Sampling, Judgemental Sampling , Convinient Sampling.
+
+Try to look for broader categories in data. Scale of measurement are : Nominal, Ordianl, Internal, and Ratio.
+
+Variable is of two types:
+Categorical: It has furtehr two types:
+Nominal:
+Ordinal:
+Numerical:  It has further two types:
+Continuous:
+Discrete:  
+
+Phases of Data Science are :
+Phase 1: Designing and Planning:  
+Phase 2: Descriptive: 
+Phase 3: Inferential Statistics: 
+
+Numerical is used for quantitative analysis and Categorical is used for qualitative analysis.
+
+Further classification of variables is:
+Dependent and Independent variables.
+Time Series and Cross sectional.
+
+Types of studies:
+Experimental Studies: Draw inference and conclusion. Applies treatment to individuals to isloate its effects and can claim causation.
+Observational Studies: Andaja laga rahe hote hain. Just see and observe. Observe individuals only , no attempt to influence the outcome , can only claim assosciation , not causation. 
+
+Phase 2: Descriptive analysis has 3 things:
+Data Organization:
+Tabulation:
+Frequency Distribution: 
+Data Visualization
+Data Summary
+
+How to check the Normal Distribution of Data?: Shapiro-will test.
+
+First organize , then visualize and last summarize the data.
+
+
+Data is complex , so we need to summarize its characterstics. Many statistical tests are intended to compare differences in:
+Central tendency: To find center of data (mean or average).
+Dispersion: Variability in values.
+
+Inferential stats:
+Parameter estimation:
+Hypothesis testing: Two types:
+Null Hypothesis: For eg. sab kuch barabar hai like height of 2 persons.
+Alternate hypothesis: Height barabar nahi hain.
+
+For testing Null hypothesis of 2 things: we use t-test or z-test. For 3 things or more things : we use annova test. 
+
+For eg. If heights are not same , then we reject null hypothesis. Either Null hypothesis is accepted or rejected.
+
+Confidence Interval = (point estimate) +/- (critical value)*(standard error) = x' +/- z*(s/root(n))
+critical value is estimation that itna galti ho sakta hai , it's value is choosen by us.
+For eg:
+Confidence Level			z-value
+0.90						1.645  =5.8 +/- 1.645(0.33)
+0.95						1.967
+0.99						2.58
+
+For averagers , we compare the means.
+
+We have to make the hypothesis. First , we make the hypothesis of our own and then we test the hypothesis.
+
+Always first try to normalize the data by using normality test: Shapiro test and kolmogorov-test.
+
+
+Methods to normalize data are:
+Log Transformation.
+Min-Max Scaler.
+Standard Scaler.
+Square root and Cubic root transformation. 
+
+If data is not homogeneous then scale the data.
+
+For finding a relationship between variables , we seek: connection, carrelation, causation and prediction.
+
+What is data wrangling?
+
+The more the data , the accurate the prediction is.
+
+Categorical is qualitative and continuous is quantative.
+
+Families of statistical tests:
+1. Chi-Squareed test: It is used for comparison for categorical data only.Its 2 types: chi-square test of homogenity and chi-square test of independence.When to use:
+Nothing affects this.
+Can be used with any number of levels or groups.
+2. Test/Anova: It is used for comparison of categorical data and continuous data (t-Test). It is mostly used. When to use:
+One sample t-Test: for one sample group with a known mean.
+Two sample t-Test:
+Unpaired t-Test:Two different groups.
+Paired t-Test: Sme group twice.
+3. Correlation: It is used for continuous data only.
+
+
+We have to look at p value.
+
+Anova full form is analysis of variance. It is of two types:
+One-way Anova:
+Two-way Anova: 
+
+
+Pearson Correlation: Use when there is one independent and one dependent variable.
+Regression: Use when there is one independent and one dependent variable.
+
+Type 1 and Type 2 error? 
+
+In statistics, hypothesis is a claim or statement about a property of a population.
+
+Hypothesis test is a standard procedure for testing a claim about a property of population.
+
+In Null Hypothesis , we assume things equal.
+
+Either reject h0 or failed to reject h0.
+
+EDA:
+Descriptive Statistics include:
+1. Population vs Sample.
+2. Central Tendency: Mean, Median ,Mode.
+3. Measure of variability : Dispersion/Spread.
+4. Outliers.
+5. Data Visualization and plots.
+
+
+An outlier is a data point in dataset that is distant from other observations.
+
+P value is the probability for null hypothesis to be true.
+
+Null hypothesis treats  everything same or equal.
+
+Bernoualli distribution has only 2 outcomes. Value will be either 0 or 1.
+
+Correlation does not imply causation.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+Hypervisor is a tool to make virtual machines.
+Docker Engine is similar to Hypervisor.
+Docker image is like .mp3 file or class , and docker container is like different media players and object.
+Base Image vs Golden Image in Docker?
+docker network ls: How many networks are laready there.
+For windows .bat, and for linux in .sh.
+touch cmd is used to make empty file.
+
+One pod should contain one container.
+Pod contains the container.
+kubectl get nodes: to list number of nodes.
+kubectl get pods: to list number of pods.
+kubectl get services
+kubectl get all : to list all resources running in our system.
+We should have docker image available before kubernetes.
+Service is going to identify pods with labels.
+Servers working in kubernetives cluster , one should become the master.
+Namespace makes virtuwal boundaries within the nodes.
+
+Docker compose is used to run multiple containers.

@@ -1,0 +1,24 @@
+ History of Automation:
+ 
+1. Bash Scripting/ Batch Scripting.
+2. Python/PERL/Ruby.
+3. Powershell.
+4. Puppet.
+5. Salt Stack.
+6. Chef: It has its own programming language.
+7. Ansible: It is a configuration management tool. It is written in python and simple to manage .
+8. Terraform: It is mainly used in cloud insfrastructure automation.
+
+
+We can use ansible in any system automation, for production server changes , setup servers from scratch/cloud provisioning,databases. It is simple tool. There is no need to setup agents in ansible and it does not have any server.
+Chef,puppet and Ansible are configuration management tools.
+Configuration management tools helps to create single script for configuration on different servers(Linux,Windows).
+Chef and Puppet use agenst system , like we have to install them on different servers and write code of them, and we have to learn languages like Python ,ruby etc.
+In Ansible , we have to learn yaml and it is agentless.
+In Ansible, control node is where we install ansible and throught control node we can manage configuration of other nodes called managed nodes.
+Ansible can also be used in provisioning like terraform and deployment in cicd.
+With shell script we cannot install application on different types of vms, with python we can do that , bit it is more complex task.
+Ansible solves these problems,because we only have to learn yaml language.
+Control node and manage node should have python in ansible.
+Control node where ansible is installed can call managed nodes without password.
+Ansible inventory in a file that contains list of managed nodes.

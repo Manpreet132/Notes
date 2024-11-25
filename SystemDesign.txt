@@ -1,0 +1,20 @@
+System Design and OOPS designs is separate.
+OOPS design basically focuses on classes.
+To understand design patterns SOLID principle and design patters is required.
+In SQL , main objective is that every information is stored once in database.
+Wheen there are multiple relations in tables , queries becomes complex amd slow.
+So alternative is nosql database.
+Types of NOSQL databases are: key-value db, document db,GRAPH DB.
+We represent document db as JSON.
+When the data is highly interconnected , we uses graph db , for eg. social media.
+In CAP theorem:
+Consistency: System shoulod be consistent, all the nodes should see the same data at same time.In cluster of nodes , if we update one node, all nodes
+should be updated at same time.
+Availability:System should always be available , It should return response whther positive or negative. 
+Partition tolerance: System can withstand network filaure the entire system shiuld not fail iof some components are not working.
+In ideal distribution system , we can only achieve 2 out of 3.
+Sharding is splitting up the database across multiple machines to improve the scalability of application.
+It is horizontal scaling.
+Vertical partitioning is based on features.
+There is directory based partitioning also.
+

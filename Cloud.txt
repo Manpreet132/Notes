@@ -1,0 +1,188 @@
+EC2 provides web services API for provisioning , managing , and deprovisioning , virtual servers inside amazon cloud.
+
+EC2 pricing:
+1. On demand: Pay per hour or second.
+2. Reserved: Reserver capacity(1 or 3  years) for discounts.
+3. Spot instance: Bid your price for unused ec2 instance.
+4. Dedicated hosts: Physical server dedicated for you . It is expensive.
+
+AMI provides information required to launch intance , which is virtual server in cloud.
+
+A Security group acts as a virtual firewall that contols the traffic for one or more instances.
+
+EBS is a block based storage like hardware.It runs ec2 OS and store data from db ,file data etc. Instance should be in same zone where ebs is present.
+Automatic replcation in same AZ.
+ 
+Elastic Load Balancer distributes incoming application or network traffic across targets, such as EC2 instance , containers and ip addresses in multiple AZs.
+NLB has static ip.
+
+Cloudwatch is used for monitoring the AWS enviroment performance.It allows us to create record metrics for services such as EBS,EC2,ELB,Route53,CloudFront etc.
+In Cloudwatch , AWS Events delivers a near real-time stream of system events that describes changes in AWS resources.We can set trigger for those events.
+Logs are used to monitor , store and access files form EC2, CloudTrail, Route 53 etc.
+Alarms monitors cloudwatch metric for instances.
+
+ We have to add cloudwatch alarms for auto scaling to inrease or decrease instances.
+
+S3 stands for simple storage service. It is storage for internet. It is like google drive and dropbox. It is object level storage.
+Data is replicated across multiple facilities. Bucket name must be unique.
+
+Target groups is basically group of instances under load balancer.
+ 
+Load Balancers also have their own security group.
+
+Don't make your website point to dynamic ip , just use static ip known as elastic ip in AWS.
+
+To delete elastic ip address , first detatch it from instance , it is attatched and then release it.
+
+EBS is same like pen drive.In EBS , there is a latency because data is travelling across network. We can attatch multiple ebs volumes to an ec2 instance.
+
+EBS can be attatched to an instance within the smae region.
+
+EC2 instance store is directly attatched to instance , fast speed , volatile in nature.
+
+By default , whatever we upload in s3 bucket is private.
+
+During modifying of EBS , we can only increase its size , not decrease its size.
+
+Provision IOPS OF EBS has multi attatch option.
+
+AWS nitro base system types can be attatched to multi EBS , not the t2 family of instances.
+
+We can change the instances type , by stopping the instance , not while in running state.
+
+Throughput means how much data can be transferred and iops means input output operations per second.
+
+Snapshot is region specific.
+
+We can automate volume backup in LifeCycle Manager and it will create snapshots after every specific time interval and snapshots limits we can specify.
+
+We can create recycle bin in AWS for sprecific resources we decide under retention rules.
+
+We can copy snapshot and move it to other region and also we can encrypt the snapshot alos while making and copying.
+
+By  default , snapshot of encrypted volume will also be encrypted and vice versa.
+
+For creating AMI, click on create image on action page, and it will be created.For sharing ami , click on action , then edit permissions  and share it.
+We can copy AMI from one region to other.
+
+In Application Load Balancer, it is mandatory to create target groups.
+
+Network Load Balancer works on transport layer , means works on port no. layer.
+
+NLB is faster than ALB , because it has low data.
+
+By default , cross load balancing is disabled in NLB.
+
+ASG has 3 types of dn=ynamic scaling policies.
+
+Predictive Scaling is future.
+
+Create a golden image and launch instances from it, so it will not waste the time while running bootstrapn  data.
+
+Hibernate: Isnatnce when stopped, put data from ram to disk.
+
+IAM is a global service.
+
+By default IAM user does not have permission to sue any AWS resource.
+
+Difference between root and admin user
+1. account level configuration(contact info, etc.) can not  be done by IAM admin and it can only be done by root user.
+2. Suppose by chance if admin user(A) has removed its own permission by mistake and in this case only root user is there who can give back the admin permission to A.
+3. Billing and cost management access is not assigned to admin user by default but these access are assign to root user by default.
+4. Only root user can close your AWS account and IAM admin can't close the account.
+5. Support plan can only be changed by root user and not by IAM admin.
+
+
+In AWS IAM, think of permissions like traffic signals. Deny is like a red light that stops actions while allow is like a green light that lets actions
+proceed. If a user is in two groups and one says 'no' to all S3 actions (red light) and the other says 'yes' (green light), the red light takes precedence.
+Even if the user has 'go' from an admin, a 'stop' from the 'no' group will win.
+  
+We can retrieve deleted object using s3 versioning.
+
+S3 bucket must be empty , before it gets deleted.
+
+We can also generate policy using policy generator.
+
+We can also inc/dec the upload speed in s3 bucket and vice-versa.
+
+We can't use s3 acceleration from aws console directly. We can use it from sdk to upload on edge location.
+
+Whenever , by default we create object inside s3 bucket , aws replicate it to other azs also inside that region.
+
+Replication rule requires versioning to be enabled.
+
+S3 glacier is for backup.
+
+Invalidation is used to delete data from cloud front.
+
+Elastic Scaling: It involves automatic horizontal scaling to match capacity with demand.
+
+ECS: Elastics Container Service. 
+
+
+
+With VPC , we can build our own network and can monitor it.
+VPC is logical data center in AWS region.
+It controls over network enviroment , select ip address range, subnets and configure route tables and gateways.
+
+Private IP Raanges:
+ CLass A: 10.0.0.0 - 10.255.255.255
+ Class B: 172.16.0.0 - 172.31.255.255
+ Class C: 192.168.0.0 - 192.168.255.255
+ 
+ Subnet Masks:
+ 255.0.0.0
+ 255.255.0.0
+ 255.255.255.0
+ 
+ 
+ 192.168.0: street address , . : house address.
+ 
+192.168.0.0: Network Ip.
+192.168.0.1: First Usable Ip. 
+192.168.0.254: Last Usable Ip.
+192.168.0.255: Broadcast. 
+Total Ip =256
+Total usable ip adress: 254
+
+CIDR: 
+255.0.0.0: /8 : because 8 ones.
+255.255.0.0: /16 : because there are 16 ones.
+255.255.255.0: /24: because there are 24 ones. 
+
+NAT gateway is used to enable instances in private subnet to connect to internet or other AWS services.
+An internet gateway is horizontally scaled , redundant and highly available  vpc component that allows communication between instances in our vpc and internet.
+
+ 
+
+# key-pair key is a key used for accessing the ec2 instance.
+# Root volume is like C volume for booting.
+# By default , EBS is deleted with EC2 instance termination , but we can change it.
+# Default security group is a always attatched to ec2 instance.
+# Shell data script or User data script always starts as a root user.
+# We can only add rules for allow in security groups , not for deny things.
+# We can add multiple rules in security group.
+# We can attatch multiple security groups to server.
+# Default security group cannot be deleted.
+# As rds is for db , as elasticbeanstalk for application.
+
+We cannot make by ouwn a default vpc, if we have to , then we have to contact aws on call.
+
+Traffic going to internet gateway public subnet , traffic going to NAT gateway , private subnet.
+
+Route Table is automatically created whenever we create a vpc.
+Bastion host becomes only entry source for traffic to enter in private subnet, in other words to access resources in private subnet.
+We have to create specific sgs for particular vpcs.
+
+Elasticbeanstalk is an even easier way for developers to quickly deploy and manage applicationsin the AWS cloud.
+As rds is fpr db , so elasticbeanstalk is for application.Upload and manage applications in AWS in minutes.
+We can simply upload our code and elasticbeanstalk will autimatically handles the deployment , from capacity provisioning,
+load balancing auto-scaling to application health monitoring and no additional charge and pay for resources needed to store and run the 
+application.
+
+What is custom TCP?
+
+AWS code commit is a version control system (replacement of github)with which we can privately store and manage assets in cloud.And git is distributed version controlsystem 
+for tracking changes in source code.
+
+AWS code pipeline? z

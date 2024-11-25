@@ -1,0 +1,58 @@
+See the difference between logo of docker and kubernetives.
+There we will realize that kubernetives is container management tool.
+In Monolithic architecture , whole code used to deployed on single server , so in caseif any change of code in any module,
+whole code was impacted, so to remove this issue microservices was introduced. 
+For accessing microservices , we use api gateways.
+It helps to do autoscaling of containers, for eg. in Disney Hotstar.
+Kubernetes is an open source container management tool which automates container deployment,container scaling
+and load balancing.
+It schedules, runs and manages isolated containers which are running on virtual /physical/cloud machines.
+ Cluster is a group of containers.
+ 
+ Before kubernetes , containers cannot communicate with each other, autoscaling and load balancing was not possible and mangement 
+ was tough.
+ Features of kubernetives:
+ orchestration(clustering of containers running on different networks),autoscaling, auto-healing,load balancing,
+ platform independent, fault tolerant, rollback(going back to previous version), health monotoring of containers,
+ batch execution(one time, sequential, parallel).
+ Kubernetes can do both vertical and horizontal scaling.
+ Kubernetes has gui available , but docker swarm deos not have gui.
+ Kubernetes can be used with any contanerization tool , but docker swarm only supports docker.
+ Kubernetes controls conatiner with pods.
+ Cluster containes master and node, k8s supports master-slave and client-server architecture.
+ In node, we can make multiple pods.Kubernetes does not talk directly with container, it talks
+ with pod only.Inside pod we make containers.
+ 
+ API-Source is the main way of communication with nodes in K8s architecture.
+ Control Manager is used for managing the tasks.
+ etcd is not a componentof kubernetives.
+ Every communication is made through api-server.
+ action is made by kube scheduler. 
+ Inside node , there are: kube-proxy,kubelet,container-engine and pods.
+ kubelet is used for controlling the pods.
+ 
+ Container does not have ip adress, pod has ip adress and pods can't communicate with each other.
+  
+Working with Kubernetes:
+We create manifest that is .yml file.
+Apply this to cluster (to master) to bring it into desired state.
+Pods runs on node , which is controlled by master.
+
+Pod is smallest unit in kubernetes.
+Pod is group of one or more containers that are deployed together on the same host.
+A cluster is a group of nodes.
+Cluster has atleast one worker node and master node.
+Control unit is pod , not containers.
+Pod consistes of one or more tightly coupled containers.
+Pod runs on node , which is controlled by master. 
+All containers is=nside pod shares same volume.
+Entire pod is hosted on the same node.
+Rollback is possible in kubernetes.
+Volume is out of node.
+Important:
+kubectl: single cloud.
+kubeadm: on premise.
+kubefd: federated.
+
+ Master node will give instruction to docker nodes to run.
+ AWS ECS,EKS ,Docker swarm are its alternatives.`1

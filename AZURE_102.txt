@@ -1,0 +1,139 @@
+Five categories of Azure Cognitive Services: Language,Speech,Vision,Decision and Applied AI services.
+GPT3 is a part of Language service.
+Anomaly Detector is a part of Decision services.
+Azure cognitive and search is part of Applied AI services.
+Azure Open AI service is also there.
+Vision has Azure AI vision and Azure AI custom vision.
+What is multi vision account?
+We have Language Studio to access the services.
+Azure AI Decision Capabilities have: Azure AI Anomaly Detector,AI Content Safety, and AI Personalizer.
+Cognitive services multi-serivce account will give you on access key and endpoint will aloow you to access all the cognitive services with that.
+Otherwise , allow for only translation like service , it will create access endpoint for that particular service only.
+Endpoint is URL to access the resource/service.
+Azure always provide two keys for security purpose.
+We can regenerate both keys for security purpose.
+We can create alerts on different services to create a trigger.
+Each service have different set of metrics.
+Endpoint is not unique to us , but keypoint is.
+Even if user has key, we can restrict his access publically by craeting resource inside VPC.
+With generate custom domain name , we can make our endpoint unique because it will change the url which is unique for everyone.
+Alternative fpr keypoint is role base access control that assigning roles to specific IAM users.
+We can use both also.
+Region name is embedded in service of endpoint.
+Every service have different endpoint name, we can have default name for all of them.
+I can develop bot service in azure also.
+We have to use docker and kubernetes.
+Is web app for deployment?
+
+Anomaly Detector falls under Azure AI services.
+Univariate Anomaly Detection detects anomalies in one variable like revenue,costetc.
+Multivariate anomaly detection detects anomalies in multiple variables with correlations which are gathered from complex systems.
+Cotent moderator is like let's say you have application which accepts user generated content , so you have to moderate or verify the content , it is used for that purpose.It is of different types:
+Image moderator(for analysing images),text moderator,video moderator,List management API etc.
+We will get bounding boxes in images analysis.
+Azure AI Personalizer is like reinforcement learning.
+Rank API: Called each time there is decision to be made.
+Reward API: called when there is feedback that can help the next decision.
+Apprentice mode: Observes the application's current logic.
+Configuration settings: You can choose how frequently the model updates,you can choose delay for rewards to be counted as feedback.
+Under setup we can do that.
+In Metric advisor: for persons noob in data science and ml , to identify patterns in live streaming coming data.It is used to analysing data.
+Azure Immersive reader ?  It is related to javascript code may be.
+It identifies tags in images with confidence.
+We can identify tags in imgae, image description,identify landmaks and celibities,idemtify brands in image in computer vision solutions.
+We can moderate adult content also in mirosoft adult content.
+We can generate thumbnails by using Computer vision API.
+Cognitive services can detect faces , but to actually dig deep dive into detecting faces we can use face detection API.
+In the custom vision service , there is a option of training model, prediction and both.
+There is a difference between object classification and object detection, object detection gives the whole set of coordinates and wider picture.
+We can analyze the video using video indexer.
+NLP is largest section in exam.
+Speech services are: implement text to speech,customize text to speech,implement speech to text,improce speech to text accuracy.
+There are different type of voices: standard,custom and neural voices.
+LUIS creates intents and entities based on schema,then add utterances.
+Azure app service and Azure cognitive service in qna maker?
+We have to create knowledge base for qna maker.
+We can edit the knowledge base also.
+We can publish the qna chatbot to public channels like instagram,slack etc.
+Bot Framework is more advanced way of building bot.
+BotFrameworkComposer helps you build a bot with GUI without code.
+Ai vision services include four main categories:OCR, Image analysis,face and video analysis.
+Image requirements are: JPG,PNG,BMP,GIF, less than 4mb,greater than 50*50 pixels,less than 10000*10000 pixels for OCR.
+Video requirements:RTSP,raw video,MP4,FLV,or MKV format.Video codec for H.264,HEVC,raw video, VP9 or MPEG-4.
+It supports dozens of languages.
+We can generate alt text from images also.
+Azure AI language service includes Text Analytics, Qna Maker, and LUIS.
+It includes key phrase extraction and names entity recogntion also.
+AI speech services includes sppech to text ,text to speech and translation services.
+Open AI includes Gen AI solutions.
+AI Document Intelligence was first a form recognizer.
+It extract data from forms.
+It allows bot prebuilt and custom extraction models.
+Knowledge mining is implemented using Azure AI search.
+Like in thousands of documents to find something relevant.
+Azure AI service is multi-service account and Azure AI Speech is single service account.If you want to access all the services in one resource then
+you need to have Azure AI services account multi service resource.
+CICD is a wasy to efficiently update custom models in production without disrupting them.
+Custom models are like custom vision, custom speech,coversation AI bots, custom Document Intelliganece.
+The continuous aspect of it means is deployment is automated.
+AI services run in the cloud, you may not want this because compliance,security and performanece.
+We can use Diagnostic settings for monitoring in Azure Monitor tool.
+Azure has keyvault service to protect keys.You should not be storing important secret information in config files.It is recommended.
+Threshold in images and text is there.
+Image classification: Assigns labels to entore image.Ideal for categorizing photo into pre-defined class.
+Object Detection:Identifies and locate objects within images.Suitable for scenarios where the location of object is important.
+With AI spatial analyis , we can monitor people movement and presence in video streams.
+BLEU score is used for model translation service.
+AI Search understands JSON file format.
+Latest Open AI models are: GPT-4,GPT-3.5,Embeddings,DALL-E,Whisper,Text to Speech.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+VisualFeatureTypes.description is used to analyze image description.
+.tags is used for analyzing tags.
+File.OpenRead opens an existing file for reading.
+Azure Cosmos DB is database.
+Azure AI Search is used to index documents for search.
+We should also give the billing endpoint to service.
+
+
+
+ 
+ 
+FaceAPI: Advanced Face Detection.
+Facelist is a list of upto 1000 faces.
+LargeFacelist is list upto 1M faces.
+FormRecognizer: Get intelligence from scanned  forms and images.
+
+Text Analytics: Detect sentiment,key phrases and named entities.
+Translator: Translate to/from 90 languages.
+Speech Service: Speech to text,text to speech,translation and speaker recognition.
+Qna Maker: Conversational questions and answers layer.
+LUIS language: Understanding Intelligent Service.
+ 
+Custom Vision: Create custom models using images.
+
+Custom Vision allows you to create custom models using your own images
+Named Entity Recognition: list of general named entities in a given document - Person, Location, Organization, Quantity, DateTime, URL, Phone Number, IP Address etc
+Custom Vision can be used to create custom image classification model. Computer Vision can be used to detect objects, faces, text etc. in images.
+Cognitive Services bring AI within reach of every developer. AI without building custom models. Does NOT need machine-learning expertise.
+Speech synthesis is converting speech to text.
+You need to normalize your numeric features. The process of normalization brings numeric features to a common scale.
+	
+Feature engineering is the method of creating new features based on the existing ones.
+AUC value should be 1.
+
+Brand detection is a specialized mode of object detection that uses a database of thousands of global logos to identify commercial brands in images or video.
+
+Stemming reduces the word to base form, whereas lemmization also but converts into meaningful form.
+
+AutoML,Azure ML Designer.
+In Azure we can choose computer vision service or cognitive services.
+Cognnitive services include many other services under one umbrella.
+All services requires key and an endpoint.
+Ther is computer vision and custom vision.
+Face service can recognize human in an image,needs to be trained on your own data, to compare one face against known face ,to identify if they belong 
+to same person.
+In language model ,we can build our own dict of words.
+Speech recognition: the ability to detect and interpret speech.
+Speech synthesis: the ability to generate spoken output.
+Language Serice is of the Azure services that include key phrase extraction, entity detection, and 

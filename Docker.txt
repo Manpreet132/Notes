@@ -1,0 +1,185 @@
+To host our apps , we need infrastructure.
+We use VMs /Cloud computing to setup infra . We isolate our services in OS of VM. We deploy different servers for or services.
+Because of isolation , we end up setting up multiple VMs/instances.In this case, VMs/instances will be overprovisioned.So, it results in high capex and opex.
+So VMs are expensive ,because every vm has os, os needs nurturing, os needs licensing, os takes time to boot,Vms needs resources for it's OS , all this to isloate services.
+Points to be Noted:
+Isloating services are important.
+High availability achieved by multiple instances/vm's.
+Portability matters or eases the deployment.
+
+But we can isloate them without OS.
+For that , we need to containerized the processes, means processes running in a directory.
+
+Container:
+Processes are isloated in container, a directory(namespace,cgroup),necessary bin/lib in directory.
+Containers share the same machine's OS system kernel and do not require OS per application.It is a standard unit
+of software that packages up code and dependencies.
+Containers offers isolation , not virtualization, they are os virtualiazation,vm is hardware virtualization.
+So vm needs os, but container do not need os.
+Containers uses host os for compute resource. 
+
+Docker manages your containers. We can run container without docker.
+Window containers run on window os and linux for itself.
+
+By default , only root user can connect to docker deamon through cli.
+Docker is a platform that helps developer build and run the applicationswith containers.
+Docker image is a stopped container like vm image. It consists of multiple layer.
+An app will be bundled in an image. Containers runs from images.
+Images are called repositories in registeries.
+Images becomes containers when they run on docker container.
+
+CloudBased registeries are:
+Dockerhub, Google Cloud registery and Amazon ECR.
+
+Command: docker pull nginx:mainline-alpine-perl
+
+Basic Commands:
+docker images: List images locally.
+docker run: creates new container.
+docker ps: lists running container.
+docker ps -a: lists all the contaienrs.
+docker exec: execute commands on containers.
+docker start/stop/restart/rm.
+docker rmi: remove docker images.
+docker inspect: Detail of containers & images.
+
+docker run -d -P nginx
+
+Images are templates of project.
+Conatainer is running instance of image.
+Container is a process that runs application with images.
+There are two types of images in docker:
+Parent image:This image is a template of project , for eg: libraries ,code and tools etc.In Node.js project need a base image of node.js.
+ 
+
+ 
+Wecan only make change to container through image.
+Container volume is volatile.
+The data inside container does not persist for a longer time.
+Docker has 2 options to store files in host machine:
+Volumes: Managed by Docker(/var/lib/docker/volumes) on Linux.
+Bind Mounts: Store it on anywhere in the host system.Mostly used to inject data from host machine to coontainer.			secretpwd		docker run --name vprodb -e MYSQL_ROOT_PASSWORD=secretpwd -p 3030:3306 -v /home/ubuntu/vprodb:/var/lib/mysql mysql:5.7
+
+We cannot delete running container in dokcer without stopping it.
+
+Containerization:
+Scenario is there is Multi Tier Application stack running on multiple vms, so there are continuous changes to be done
+so it leads to high capex and opex and also human errors is deployment,not compatible with microservices architecture
+and leads to resource wastage.
+
+Solution is Containers as it uses low resources and suits well for microservice design.
+Deployment is done via images , same container images across enviroment , reusable and repeatable.
+
+Docker is container runtime enviroment.
+
+To build docker image, we need to write docker file.We provide instruction in file (Docker file) on how to build image , what packages it should contain and resources.
+Docker file contains instructions ,commands etc. 
+
+Docker compose is a tool to run mltiple containers together.
+What vagrant is for vms , in same way docker compose is for containers.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+For interview example is building application on our pc and then handing it over to client and procedures to client for installing dependencies.
+In Docker, container is like a vm,Docker is a tool which create this container.But actually docker is an engine.
+Also , give the example of installing pubg game.
+What is hypervisor and hibernate?
+ In case of vms , we have to create multiple vms, but in case of container , they share single OS.
+Containers takes resources whenever they run.They do not have OS of their own, so they are light weighted.
+Docker is open source centralized platform designed to create , deploy and run applications.
+Docker uses container on the host OS to run applications,to use source linux rather than creating a wholse virtual OS.
+We can install docker docker on any OS, BUT DOCKER ENGINE natively runs on linux.
+Docker is written in go language.
+Docker is a tool that performs OS level virtualiazation known as containerization.
+Docker is a set of platform as a service.
+Container does not take resources from hardware, it takes it from OS.
+Yes, container containes os files , but in negligble size of files.
+Image in running state is called container.
+We can do changes in container only , not in image.
+Docker does not provide cross platform compatibility.
+Docker is suitable when development and testing OS are same.
+Docker file contains dependencies and required softwares.Docker File-> Image->Container.
+Docker images are like templates.
+With docker compose , we can run many containers.
+Components of Docker:
+Docker daemon: It runs on the host OS . It is reponsible for running container to manage docker services.
+It can communicate with other daemons.
+Docker client:
+Docker users can interact with docker daemon through client.
+It is possible for docker client to communicate with more thamn one daemon.
+Docker Host:
+It is used to provide an enviroment to execute and run applications.
+
+
+Docker registry manages and stores the docker images.There are 2 types of registries: public and private.
+Docker images are read only templates.
+Ways to create image:
+1.Take image from Docker hub.
+2.Create image from docker file.
+3.create image from existing container.
+
+Docker commands:
+To find out images in dockerhub: docker search jenkins
+To download docker image from dockerhun to local machine: docker pull centos
+To give name to container: docker run -it --name bhupinder ubuntu /bin/bash
+ To start container: docker start container_name
+ To get inside container: docker attatch container_name : for it , container should be started
+To see all containers: docker ps -a
+To see only running containers: docker ps
+To stop and delete containers: docker stop c_name and docker rm c_name
+which docker: to ensure install of docker
+service deocker container: to check whether docker is started or not.
+ Whenever we run the container , we get inside the container.
+ Whenever se, stop the container and then run again , then new container is created, not old one.
+ To make image from container: docker commit new_container_name update_image_name
+ 
+ service docker status
+ service docker start
+ 
+ Docker components:
+ FROM: For base image. This command must be on the top of dockerfile.
+ RUN: To execute commands , it will create a layer in image.
+ MAINTAINER: Author/Owner/Description.
+ COPY: Copy files from local system , we need to provide source, destination.
+ ADD: Similar to copy but, it provides a feature to download files from internet, also we extract files at 
+ docker image side.
+ EXPOSE: To expose points, such as port 8080 for tomcat, port 80 for nginix.
+ WORKDIR: To set working directory for container.
+ CMD: Execute commands but during container creation.
+ ENTRYPOINT: Similar to CMD, but has higher priority over CMD.
+ ENV: Enviroment variables.
+ 
+ To create image out of dockerfile: docker build -t my_img_name .:Here (.) represents current directory. 
+ 
+ Docker Volume:
+ Volume is simply a directory inside our own container.
+ Firstly, we have to declate the directory as volume and then share the volume.
+ Even , if we stop container, still we can access volume.
+ We can declare a directory as volume only while creating container.
+ We can't create volume from existing container.
+ We can share one volume across any number of containers.
+ Volume will not be included when we update an image.
+ Volume is mapped in two ways:
+ container to container
+ host to container.
+ On deleting container , volume do not delete.
+ 
+ We can also declare volume in docker image before running the container.
+ root@ip-172-31-15-175:~# service docker start
+root@ip-172-31-15-175:~# service docker status
+root@ip-172-31-15-175:~# docker build -t myimage . : creating docker image from docker file.
+
+Container does not have an ip address.
+
+What vagrant is for vms, in same way docker compose is for docker containers.
+ For ubuntu updating command is:
+ apt-get update
+ apt-get install package_name
+ For toher:
+ yum update -y
+ yum install docker -y
+ 
+ Docker exec creates a new process in containers enviroment while docker attach just connects the standard i/o of main process inside container
+ to correspondig standard i/o error of current terminal.
+ If we expose and -p a port, the service in the container is accessible from anywhere , even outside docker.
+ 

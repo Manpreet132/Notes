@@ -1,0 +1,1 @@
+Wecan write infrastructure as a code in terraform.

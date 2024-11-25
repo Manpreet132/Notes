@@ -1,0 +1,63 @@
+Azure AI Search is an Applied AI Service that enables you to ingest and index data from various sources, and search the index to find, filter, and sort 
+information extracted from the source data.
+You can use Azure Machine Learning to publish a trained model as a web service, and consume it from applications through its REST interface.
+Azure AI Document Intelligence - An optical character recognition (OCR) solution that can extract semantic meaning from forms, such as invoices, 
+receipts, and others.
+Azure AI Speech - Speech to text, text to speech, translation, and speaker recognition.
+Endpoint is the url of service.
+Messages are exchanged in JSON format with Azure AI services.
+We can store the keys in Azure Key Vault.
+You can then view overall costs for the subscription by selecting the Cost analysis tab.
+We can create alerts in alert tab.
+Azure Monitor collects metrics for Azure resources at regular intervals so that you can track indicators of resource utilization, health, and 
+performance.
+A dashboard enables you to combine visualizations from multiple resources.
+COCO file is JSON format file.
+Labeling your training images is done in Azure Machine Learning studio, using the Data Labeling Project.
+You need about 3-5 images per class to train a custom image classification model with Azure AI Vision.
+The Azure AI Vision service enables you to detect people in an image, as well as returning a bounding box for its location.
+The Face service offers more comprehensive facial analysis capabilities than the Azure AI Vision service.
+The Document Intelligence API can be used to process PDF formatted files.
+For OCR specific Results contain blocks, words and lines, as well as bounding boxes for each word and line.
+Document Intelligence is the best choice for large amounts of structured text and multiple languages, however isn't the best choice for shorter, unstructured handwritten 
+text,so Image Analysis API is used.
+The Azure Video Indexer service is designed to help you extract information from videos. 
+Temperature: Controls randomness. Lowering the temperature means that the model produces more repetitive and deterministic responses. Increasing the 
+temperature results in more unexpected or creative responses. Try adjusting temperature or Top P but not both.
+The API supports a maximum of 4000 tokens shared between the prompt (including system message, examples, message history, and user query) and the 
+model's response. One token is roughly four characters for typical English text.
+Top probabilities (Top P): Similar to temperature, this controls randomness but uses a different method. Lowering Top P narrows the model’s token 
+selection to likelier tokens. Increasing Top P lets the model choose from tokens with both high and low likelihood. Try adjusting temperature or Top P but not both.
+The Chat playground is able to support conversation-in, message-out scenarios.
+The system message is included at the beginning of a prompt and is designed to give the model instructions, perspective to answer from, or other information helpful to guide the model's response. 
+Another technique for improved interaction is to divide complex prompts into multiple queries. This allows the model to better understand each individual part, and can improve the overall accuracy.
+Dividing your prompts also allows you to include the response from a previous prompt in a future prompt, and using that information in addition to the capabilities of the model to generate interesting responses.
+Asking a model to respond with the step by step process by which it determined the response is a helpful way to understand how the model is interpreting 
+the prompt. By doing so, you can see where the model made an incorrect logical turn and better understand how to change your prompt to avoid the 
+error.This is called chain of thought.
+Content filters enable you to suppress harmful content at the Safety System layer..
+Key phrase extraction - identifying important words and phrases in the text that indicate the main points.
+Named entity recognition - detecting references to entities, including people, locations, time periods, organizations, and more.
+Linked entities enable you to disambiguate common entities of the same name.
+In single label projects, each file is assigned one class during the labeling process; class assignment in Azure AI Language only allows you to select one class.
+When labeling multiple label projects, you can assign as many classes that you want per file. The impact of the added complexity means your data has to remain clear and provide a good distribution of possible inputs for your model to learn from.
+Custom NER enables developers to extract predefined entities from text documents, without those documents being in a known format - such as legal agreements or online ads.
+An entity is a person, place, thing, event, skill, or value.
+Recall indicates how well the model extracts entities, regardless of which entity that is.
+Having the right data diversity will lead to better extraction performance.
+For Translation language: curl -X POST "https://api.cognitive.microsofttranslator.com/translate?api-version=3.0&from=ja&to=fr&to=en" -H "Ocp-Apim-Subscription-Key: <your-key>" -H "Ocp-Apim-Subscription-Region: <your-service-region>" -H "Content-Type: application/json; charset=UTF-8" -d "[{ 'Text' : 'こんにちは' }]"
+Translation converts text from one language to another.
+Transliteration converts text from one script to another.
+Speaker Recognition: An API that enables your application to recognize individual speakers based on their voice.
+Intent Recognition: An API that uses conversational language understanding to determine the semantic meaning of spoken input.
+The Speech to text API, which is the primary way to perform speech recognition.
+The Speech to text Short Audio API, which is optimized for short streams of audio (up to 60 seconds).
+The Azure AI Speech SDK requires the location and a key to connect to the Azure AI Speech service.
+To set a voice, set the SpeechSynthesisVoiceName property of the SpeechConfig to a voice name, such as "en-GB-George".
+When you want to perform 1:1 translation (translating from one source language into a single target language), you can use event-based synthesis to capture the translation as an audio stream.
+Specify the desired voice for the translated speech in the TranslationConfig. Create an event handler for the TranslationRecognizer object's Synthesizing event. In the event handler, use the GetAudio() method of the Result parameter to retrieve the byte stream of translated audio.
+Manual synthesis is an alternative approach to event-based synthesis that doesn't require you to implement an event handler. You can use manual synthesis to generate audio translations for one or more target languages.
+Use a TranslationRecognizer to call the Translation API of the Azure AI Speech service.
+ 
+
+

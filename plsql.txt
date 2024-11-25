@@ -1,0 +1,468 @@
+Note:- PL-SQL supports all datatypes,operators,keywords supported in SQL.PLSQL supports additional keywords,datatypes,operators.
+
+In PLSQL we write the codes in 5 blocks.
+1. Anonymous blocks(Nameless block/Not stored in database)
+2. Procedure Block(Named Block/Called as Subprogram/Stored as Database object in database/invoked explicitly)
+3. Function Block(Named Block/Called as Subprogram/Stored as Database object in database/invoked explicitly)
+4. Package Block(Named Block/Called as Subprogram/Stored as Database object in database/invoked explicitly)
+5. Trigger Block(Named Block/Called as Subprogram/Stored as Database object in database/It is invoked implicitly)
+
+
+Syntax for Anonymous Block:-
+
+DECLARE (optional)
+
+--Declaration Section
+
+BEGIN
+
+Codes to be executed; --followed by semicolon
+
+END;  --SQL plus use /
+
+/
+
+
+
+Example:- Using Anonymous block find the employee name by putting employee number from emp
+
+
+DECLARE 
+
+v_ename varchar2(20);
+
+BEGIN
+
+SELECT ename INTO v_ename FROM emp WHERE empno=&empno;
+
+DBMS_OUTPUT.PUT_LINE('Employee name is '|| v_ename);
+
+END;
+
+/
+
+
+Using Anonymous block insert the following columns like empno,ename,sal from emp table
+
+BEGIN
+
+INSERT INTO emp (empno,ename,sal) VALUES (&empno,'&ename',&sal);  
+
+COMMIT;
+
+END;
+
+/
+
+
+
+
+
+Syntax for Procedure Block
+
+CREATE PROCEDURE procedure_name
+
+IS / AS --Any one
+
+Declaration Section
+
+
+BEGIN
+
+Codes to be executed
+
+END procedure_name;
+
+/
+
+
+
+Example using procedure block insert into following columns like empno,ename,sal from emp table
+
+CREATE PROCEDURE procedure_insert(p_empno IN number,p_ename IN varchar2,p_sal IN number)
+
+IS
+
+BEGIN
+
+INSERT INTO emp(empno,ename,sal) VALUES(p_empno,p_ename,p_sal);
+
+COMMIT;
+
+END procedure_insert;
+
+/
+
+
+Example for OUT parameter using procedure blocks display ename , sal, by inputting empno from emp table
+
+
+CREATE PROCEDURE procedure_display(p_empno IN number,p_ename OUT varchar2,p_sal OUT number)
+
+IS
+
+BEGIN
+
+SELECT ename,sal INTO p_ename,p_sal FROM emp WHERE empno=p_empno;
+
+END procedure_display;
+
+/
+
+
+DECLARE 
+
+v_ename varchar2(30);
+
+v_sal number;
+
+BEGIN
+
+
+procedure_display(7902,v_ename,v_sal);
+
+DBMS_OUTPUT.PUT_LINE(v_ename||' Earns '|| v_sal);
+
+END;
+
+/
+
+
+
+
+
+
+
+
+
+
+Syntax for Function block
+
+CREATE FUNCTION function_name(parameter1 MODE DATATYPE,...)
+
+RETURN DATATYPE
+
+IS/AS 
+
+declaration section
+
+
+BEGIN
+
+
+Codes to be executed;
+
+
+END function_name;
+
+/
+
+
+
+Example using function block find the employee name by inputting the employee number from emp table
+
+
+CREATE FUNCTION function_select(f_empno IN number)
+
+RETURN varchar2
+
+IS
+
+v_ename varchar2(30);
+
+
+BEGIN 
+
+
+SELECT ename INTO v_ename FROM emp WHERE empno=f_empno;
+
+RETURN v_ename;
+
+END function_select;
+
+/
+
+
+Package Block
+
+Package block has 2 parts
+1. Package specification.
+2. Package body
+
+Package specification can survive without package body.
+But package body cannot survive without package specification.
+
+Package cannot be nested.
+Package cannot have parameters.
+
+In PLSQL the runtime polymorphism is supported only through package.
+
+Package acts like a container where it can store multiple variables,constants,functions and procedures.
+
+
+
+Syntax for Package specification.
+
+
+CREATE PACKAGE package_name
+
+IS/AS -- any one
+
+PROCEDURE procedure_name(parameter1 MODE datatype,...);
+
+FUNCTION function_name(parameter1 MODE datatype,...)
+RETURN DATATYPE;
+
+END package_name;
+/
+
+
+
+
+Example:
+
+
+
+CREATE PACKAGE pack1
+
+IS
+
+
+PROCEDURE insert_procedure(p_empno IN number,p_ename IN varchar2,p_sal IN number);
+FUNCTION display_function(f_empno IN number)
+RETURN varchar2;
+
+
+END pack1;
+/
+
+
+
+CREATE PACKAGE BODY pack1
+
+IS
+
+PROCEDURE insert_procedure(p_empno IN number,p_ename IN varchar2,p_sal IN number)
+
+IS
+
+BEGIN
+
+INSERT INTO emp(empno,ename,sal) VALUES (p_empno,p_ename,p_sal);
+
+COMMIT;
+
+END insert_procedure;
+
+
+FUNCTION display_function(f_empno IN number)
+RETURN varchar2
+
+IS
+
+v_ename varchar2(40);
+
+BEGIN
+
+
+SELECT ename INTO v_ename FROM emp WHERE empno=f_empno;
+RETURN v_ename;
+
+
+END display_function;
+
+END pack1;
+/
+
+
+
+Using package block insert into employee number,name,salary from emp by using procedure block p1_insert.Also using package block insert into empno,sal from emp table using procedure block p1_insert
+
+CREATE OR REPLACE PACKAGE demo 
+
+IS
+
+
+PROCEDURE p1_insert(p_empno IN number,p_ename IN varchar2,p_sal IN number);
+PROCEDURE p1_insert(p_empno IN number,p_sal IN number);
+
+
+END demo;
+/
+
+
+CREATE OR REPLACE PACKAGE BODY demo
+
+IS
+
+PROCEDURE p1_insert(p_empno IN number,p_ename IN varchar2,p_sal IN number)
+
+
+IS
+
+BEGIN
+
+INSERT INTO emp(empno,ename,sal) VALUES (p_empno,p_ename,p_sal);
+
+COMMIT;
+
+END p1_insert;
+PROCEDURE p1_insert(p_empno IN number,p_sal IN number)
+
+IS
+
+BEGIN
+
+INSERT INTO emp(empno,sal) VALUES (p_empno,p_sal);
+
+COMMIT;
+
+END p1_insert;
+
+END demo;
+/
+
+
+TRIGGER BLOCK
+
+Why Trigger? What is Trigger?
+Trigger is a stored database object but it is invoked implicitly whenever a event occurs 
+
+
+
+
+
+Trigger types
+1.DML trigger
+2.DDL trigger
+3.Database trigger
+
+
+Trigger events
+1. DML event(INSERT,UPDATE,DELETE)
+2. DDL events (truncate ,drop,create)
+3. Database events(LOGON,LOGOFF)
+
+
+
+Trigger level
+1. Statement level(Default)
+2. Row level(FOR EACH ROW)
+
+
+Trigger timing
+1. AFTER(Applicable for table and database)
+2. BEFORE(Applicable for table and database)
+3. INSTEAD OF(Applicable for view object)
+
+
+Trigger body
+Starting with BEGIN and end with END
+NOTE:- We donot use IS/AS keywords for trigger
+
+Trigger Syntax
+
+CREATE TRIGGER trigger_name
+
+TRIGGER TIMING TRIGGER EVENT OF(optional) COLUMN NAME ON object_name
+
+TRIGGER LEVEL
+
+Declaration section
+
+
+BEGIN
+
+Codes to be executed;
+
+END trigger_name;
+/
+
+
+Note:- Inside the trigger body we should not use TCL commands like(Commit,Rollback,Savepoint)
+
+
+
+
+Example:-
+
+
+CREATE TRIGGER logon_trigger
+AFTER LOGON ON SCHEMA
+
+BEGIN
+
+INSERT INTO emp (empno,ename,sal)VALUES(7865,'Beck',54000);
+
+END logon_trigger;
+/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+View Trigger
+Disable/Enable Trigger
+Drop Trigger
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

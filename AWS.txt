@@ -1,0 +1,172 @@
+different types of ec2 instances with leyman examples?
+
+Within Amazon EC2 Auto Scaling, you can use two approaches: dynamic scaling and predictive scaling.
+
+Dynamic scaling responds to changing demand. 
+Predictive scaling automatically schedules the right number of Amazon EC2 instances based on predicted demand.
+
+ELB is automatically scalable and regional level service.
+Amazon fargate?
+SQS vs SNS?
+Regions in AWS are isolated from each other.Some locations(regions) are expensive.
+AWS Outposts?
+AWS 
+
+Amazon EC2 instances are virtual servers. If you start an instance from a stopped state, the instance might start on another host, where the 
+previously used instance store volume does not exist. Therefore, AWS recommends instance stores for use cases that involve temporary data that you do
+not need in the long term.
+
+We can store unlimited amount of data in s3.Maximun size we can upload is 5TB.
+
+EBS is used for frequent read and write operations , while s3 is used for ocassional read and write operations.
+Amazon EFS is a regional service. It stores data in and across multiple Availability Zones. 
+
+
+
+The duplicate storage enables you to access data concurrently from all the Availability Zones in the Region where a file system is located. 
+Additionally, on-premises servers can access Amazon EFS using AWS Direct Connect.
+
+Consider Amazon Aurora if your workloads require high availability. It replicates six copies of your data across three Availability Zones and 
+continuously backs up your data to Amazon S3.
+Dynamo DB is serverless and non-relational database.
+
+Amazon Redshift is a data warehouse service that we can use it for big data analytics.It offers the ability to collect data from various sources 
+and helps to understand relationship and trends across the data. Data warehousing is like storing huge amoubnt of data.
+
+Amazon Database migration helps customers to migrate their existing databases to AWS.mIgration is within AWS services.
+
+Amazon DocumentDB(opens in a new tab) is a document database service that supports MongoDB workloads. (MongoDB is a document database program
+Amazon Neptune is a graph service database.You can use Amazon Neptune to build and run applications that work with highly connected datasets, such
+as recommendation engines, fraud detection, and knowledge graphs.
+Amazon quantume ledger database (Amazon QLDB) is a ledger data base service.
+We can use Amazon QLDB to review a complete history of all the changes that have been made to application data.
+Amazon Managed Blockchain(opens in a new tab) is a service that you can use to create and manage blockchain networks with open-source frameworks. 
+Blockchain is a distributed ledger system that lets multiple parties run transactions and share data without a central authority.
+Amazon DynamoDB Accelerator (DAX)(opens in a new tab) is an in-memory cache for DynamoDB. 
+It helps improve response times from single-digit milliseconds to microseconds.
+
+AWS responsible for the security of cloud and customer responsible for security in cloud.
+Patching is similar to updating.
+
+By default IAM user has zero permissions, cant even login to the system.
+
+Do not use the root user for everyday tasks. 
+
+Instead, use the root user to create your first IAM user and assign it permissions to create other users.
+
+Then, continue to create other IAM users, and access those identities for performing regular tasks throughout AWS. Only use the root user when you need to perform a limited number of tasks that are only available to the root user.
+Examples of these tasks include changing your root user email address and changing your AWS support plan. For more information, see “Tasks that require root user credentials” in the AWS Account Management Reference 
+Guide(opens in a new tab).
+
+When we create an AWS organization , root user is created by default.
+We can centrally control permissions for the accounts in organizationcy using Service control policies.
+
+AWS Artifact(opens in a new tab) is a service that provides on-demand access to AWS security and compliance reports and select online agreements. AWS Artifact consists of two main sections: AWS Artifact Agreements and AWS Artifact
+Reports.A denial-of-service (DoS) attack is a deliberate attempt to make a website or application unavailable to users.In a distributed denial-of-service (DDoS) attack, multiple sources are used to start an attack that aims to make a website or application unavailable
+
+AWS Shield is a service that protects applications against DDoS attacks. AWS Shield provides two levels of protection: Standard and Advanced.
+
+AWS WAF is a web application firewall that lets you monitor network requests that comes into your web applications.
+AWS WAF works in a similar way to block or allow traffic. However, it does this by using a web access control list (ACL)(opens in a new tab) to protect your AWS resources. 
+
+Amazon Inspector helps to improvethe security and compliance of applications by running automated security assesments.
+Amazon GuardDuty is a service that provides intelligent threat detection for your AWS infrastructure and resources.
+
+An IAM role is an identity that you can assume to gain temporary access to permissions. When someone assumes an IAM role, they abandon all permissions that they had under a previous role and assume the permissions of the new role.
+IAM roles are ideal for situations in which access to services or resources needs to be granted temporarily instead of long-term.
+
+Amazon CloudWatch(opens in a new tab) is a web service that enables you to monitor and manage various metrics and configure alarm actions based on data from those metrics.
+AWS CloudTrail(opens in a new tab) records API calls for your account. The recorded information includes the identity of the API caller, the time of the API call, the source IP address of the API caller, and more. You can think of
+CloudTrail as a “trail” of breadcrumbs (or a log of actions) that someone has left behind them.
+Within CloudTrail, you can also enable CloudTrail Insights(opens in a new tab). This optional feature allows CloudTrail to automatically detect unusual API activities in your AWS account. 
+AWS Trusted Advisor(opens in a new tab) is a web service that inspects your AWS environment and provides real-time recommendations in accordance with AWS best practices.
+
+
+AWS Free Tier services are: SgeMaker,Amazon Comprehend Medical, DynamoDB, Amazon Cognito.
+Three types of offers are available: 
+ 
+Always Free
+12 Months Free
+Trials
+
+Amazon Lightsale is used to run virtual private servers.
+The AWS Pricing Calculator(opens in a new tab) lets you explore AWS services and create an estimate for the cost of your use cases on AWS.
+Use the AWS Billing & Cost Management dashboard(opens in a new tab) to pay your AWS bill, monitor your usage, and analyze and control your costs.
+The consolidated billing feature of AWS Organizations enables you to receive a single bill for all AWS accounts in your organization.
+The default maximum number of accounts allowed for an organization is 4, but you can contact AWS Support to increase your quota, if needed.
+In AWS Budgets(opens in a new tab), you can create budgets to plan your service usage, service costs, and instance reservations.
+AWS Cost Explorer is a tool that lets you visualize , understand and manage your AWS costs and usage over time.
+AWS offers four different Support plans(opens in a new tab) to help you troubleshoot issues, lower costs, and efficiently use AWS services. 
+AWS Marketplace(opens in a new tab) is a digital catalog that includes thousands of software listings from independent software vendors. You can use AWS Marketplace to find, test, and buy software that runs on AWS. 
+
+
+At the highest level, the AWS Cloud Adoption Framework (AWS CAF)(opens in a new tab) organizes guidance into six areas of focus, called Perspectives. Each Perspective addresses distinct responsibilities. 
+The planning process helps the right people across the organization prepare for the changes ahead.
+
+In general, the Business, People, and Governance Perspectives focus on business capabilities, whereas the Platform, Security, and Operations Perspectives focus on technical capabilities.
+6 strategies for migration
+
+When migrating applications to the cloud, six of the most common migration strategies(opens in a new tab) that you can implement are:
+
+Rehosting
+Replatforming
+Refactoring/re-architecting
+Repurchasing
+Retaining
+Retiring
+
+The AWS Snow Family(opens in a new tab) is a collection of physical devices that help to physically transport up to exabytes of data into and out of AWS. 
+
+AWS Snow Family is composed of AWS Snowcone, AWS Snowball, and AWS Snowmobile. 
+
+AWS Snowcone(opens in a new tab) is a small, rugged, and secure edge computing and data transfer device. 
+
+
+
+It features 2 CPUs, 4 GB of memory, and up to 14 TB of usable storage.
+AWS Snowmobile(opens in a new tab) is an exabyte-scale data transfer service used to move large amounts of data to AWS. 
+AWS offers a variety of services powered by artificial intelligence (AI). 
+
+
+
+For example, you can perform the following tasks:
+
+Convert speech to text with Amazon Transcribe.
+Discover patterns in text with Amazon Comprehend.
+Identify potentially fraudulent online activities with Amazon Fraud Detector.
+Build voice and text chatbots with Amazon Lex.
+
+The Governance Perspective helps you to identify and implement best practices for IT governance and support business processes with technology.
+The Operations Perspective focuses on operating and recovering IT workloads to meet the requirements of your business stakeholders.
+The Business Perspective helps you to move from a model that separates business and IT strategies into a business model that integrates IT strategy.
+Subnets can communicate with each other.
+A network ACL is a virtual firewall that controls inbound and outbound traffic at the subnet level.
+By default, your account’s default network ACL allows all inbound and outbound traffic, but you can modify it by adding your own rules. For custom network ACLs, all inbound and outbound traffic is denied until you add rules to 
+specify which traffic to allow.
+Network ACLs perform stateless packet filtering. They remember nothing and check packets that cross the subnet border each way: inbound and outbound. 
+Security groups perform stateful packet filtering. They remember previous decisions made for incoming packets.
+AWS Direct Connect Establish a dedicated connection between the on-premises data center and the VPC.
+
+Redshift is a type of RDS.
+Amazon Timestream database stores and analyse live trillions of data per second.
+Amazon Neptune can simplify the setup and running of your graph databases. Amazon Neptune can be useful for social media. Amazon Neptune can be useful for fraud detection.
+Amazon DyanamoDB is serverless.
+You can use Route 53 to perform three main functions in any combination: domain registration, DNS routing, and health checking. 
+Use the AWS Artifact service to generate on-demand compliance reports.
+AWS Trusted Advisor guides you on how to reduce cost, increase performance, and improve security.
+AWS Cost explorer and AWS cost usage reports helps to establish visibility , whereas AWS Budgets and cost anomaly detection prevent overspend.
+Data transfer in in free and out is charged.
+AZ should have one or more data centres.
+ELasticBeanStalk in paas and rekognition in saas.
+S3 bucket is regional level service.
+Transit Gateway connects thousand of vpc together.
+Cost Explorer can use that data to forecast how much you're likely to spend for the next 12 months.
+AWS Cost and Usage Reports (sometimes referred to as AWS CUR) track your AWS usage and provide estimated charges for the account.
+AWS Budgets is a Cost Management feature you can use to track and manage your AWS costs.
+AWS GuardDuty is intelligent threat discovery to protect AWS account.It uses ML algos for anomaly detection.
+AWS Inspector is automated security assesment.It continuously scans the infrastructure when needed.
+AWS config helps with auditing and recording compliance of AWS resources.It helps record configurations and changes over time.
+Amazon Macie is a fully managed data security and data privacy service that used ML and pattern matching to discover and protect your sensitive data in AWS.
+AWS security hub tool is used to manage security across several AWS accounts and automate security checks.
+GuardDuty , Macie, Security Hub are used to identify potential security issues or findings , but Amazon Detective analyzes, investigatesand quickly identifies the root cause of security issuesusing ML and graphs.
+AWS Abuse reports suspected AWS resources used for abusive or illegal purpose.

@@ -1,0 +1,17 @@
+In CNN , data is is in the form of images and video frames.
+Sequence of text and information is very important in terms for sequential data.
+Bsed on the sequence , sentence makes meaning.
+In nLP, we convert text data to vectors, and vectors to numerical representation.
+Word embeddings are numerical representation of words, this is usseful because we need numbers form data to train model.
+Sequential information is very important to make the context clear.
+In sequential data , we can't give all data to input at one timeframe only, instead we have to give it by one by one.
+So, we use RNN for this sequential data.
+In this previous context information will also be retained by RNN.
+One Hot Encoding converts each word to vector.
+In Multiclass classification we use softmax, in binary is sigmoid activation function.
+Long term dependency cannot be captured by RNN, so it is not effectice in long texts.
+Derivative of sigmoid ranges from 0 to 0.25.
+
+Streamlit is an open source app framework for data science and machine learning applications.
+Words are converted into the vectors through embedding layer using word embeddings.
+

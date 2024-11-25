@@ -1,0 +1,8 @@
+Cloudformation is IAC tool.
+Cloudformation is for AWS, Azure resource manager is for Azure.
+Terraform can create resources in any cloud platform.
+HCL code will create aws api , azure api according to requirements.
+terraform init: will initilize the configuration.
+terraform plan: what is going to create.
+Provider is a plugin which helps terraform to understand where to create resource.
+Terraform has 2 variables: input and output variable.

@@ -1,0 +1,6 @@
+In data is not normally distributed and in linear regression we have to perform lot of feature engineering.
+Multicollinearity is problem in linear regression.
+If the independent features are correlated it affects the performance.
+Feature scaling is required in Linear Regression.
+Real life examples of left skewed distribution and right skewed distribution.
+axis=0 means it is column wise.

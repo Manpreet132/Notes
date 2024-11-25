@@ -1,0 +1,67 @@
+User: Manpreet
+Passwd: Jenkins@123
+Jenkins has lot of plugins.
+
+oot@ip-172-31-32-27:~# id jenkins
+uid=115(jenkins) gid=122(jenkins) groups=122(jenkins)
+root@ip-172-31-32-27:~# 
+
+Jobs means workload. In linux we write script to automate the task , likewise in jenkins we use jobs.
+
+Freestyle jobs are graphical jobs, Pipeline as a code is created in groovy language. Freestyle as a code is like following recipe to make  sandwich
+where we have lot of options and flexibility in putting things together , whereas in pipeline as a code , it is like following a recipe to make that
+sandwich , it is more organized , easier to understand and can be reused or shared.
+
+Use commands only if you do not have any option for using plugins.
+
+Kiss: Keep it simpleandsecret.
+Dry: Don't repeat yourself.
+  
+In workspace, we see the artifacts and output.
+ 
+meaning of build and artifacts in jenkins and use of maven?
+
+Artifacts are tyhe files that are output generated during the execution of a build job.They could be compiled code, test results, logs or any other files produced by build process. These artifacts can be stored and used later
+like deploying an application. It is like end product created after running job in jenkins.
+
+Build process is like taking all parts of your code , processing them, and creating a functional output , just like creating dessert from ingredients(source code , library) , follow a recipe (build script) , then mix everything
+together (compile, test and package) and finally get a finished cake (software application.).
+
+Maven is like a super organized tool for software projects. It helps manages all the parts of projects, like libraries or dependencies. It makes it easy to build the project and helps others to work on it too.It is like 
+librarian for project tools.
+
+Steps for Jenkins Project:
+Jenkins setup
+Nexus server setup
+Sonarqube server setup
+Security Group
+Plugins: For integration with Jenkins: Nexus, Sonarqube, Git, Maven.
+Integrate Nexus and Sonaqube wiht jenkins.
+Will write then pipeline script and then will make notifications.
+
+Jenkins file is a text file with pipeline of DSL syntax.
+
+Nexus is used to store and retrieve softwares. Nexus Software Repository Manager:
+Runs on java.
+Used to store artifacts.
+Used as a Package manager for dependencies.
+Open source and enterprise versions.
+
+Docker CI in Jenkins:
+Install Docker engine in Jenkins.
+Install AWS CLI.
+Create IAM user.
+Create ECR repo.
+Plugins: ECR, docker pipeline, aws sdf for credentials.
+Store AWS credentials in Jenkins.
+Run the pipeline.
+
+Docker CICD: 
+
+Container hosting platforms:
+Docker Engine
+Kubernetives:
+Standalone,EKS,AKS,GKE,Openshift etc.
+AWS ECS: Elastic Container Service.
+
+ 

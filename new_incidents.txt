@@ -1,0 +1,36 @@
+INC2443901:Assigned to Sneha
+ZAA7038001:This is with error Pending Order Item already exist.
+
+
+INC2457851:solved and closed.
+ZAH6996002: NRC Error
+
+
+INC2414887:Assigned to Sneha.
+ZAA7038001:This is with error Pending Order Item already exist.
+ZAC7040001:This is with error Pending Order Item already exist.
+ZAC7055001:This is with error Pending Order Item already exist.
+
+
+INC2447629:solved and closed.
+ZAE4385002:This is error with NRC.
+
+New Work Orders:
+INC2457758:
+Assigning to AMDD group since VMB report is generated in AMDD.
+
+
+INC2379875:Assigned to Order Fallout
+Issue not related to order.Assigned to ECOM team for further analysis as API is invoked from ECOM GUI.
+
+New:
+INC2461628:Assigned to Order Fallout.
+YPT2335003:Connection is not available error scenario.
+
+
+INC2470225:Assigned to Order Fallout.
+ZAJ0733001: This order has failed due to overlapping ICB dates with contract start/end date.
+
+
+INC2460788: Assigned to Xiaoxin.
+ZAI5766001:There is unbilled CDR error issue.

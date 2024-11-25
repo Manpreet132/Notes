@@ -1,0 +1,113 @@
+GEN AI is part or we can say subset of ML.
+A square matrix is singular if it is not invertible and deteminant =0.
+Token is a unit of text that might be word.
+Tokens are more consistent than words.
+Tokens are smaaller and easily manageable.
+Tokens are effiecient to process.
+GenAI understands relatioship between tokens and helps in predicting next token.
+Tokens are more consistent than words - They have one meaning, smaller and therefore, easier to establish relationships.
+Foundation Models: Pre-Trained Multi Task Models. Large Language Models are Foundation Models focused on text.
+OpenAI Playground: Web based tool to experiment with the OpenAI API
+Prompt Design Principles:
+Clear instruction , avoid ambiguity and vagueness.
+Give examples(Zero shot vs One Shot vs Few Shots).
+Consider using Framework(RTF,CTF,RASCEF).
+Be really specific abbout what you want.
+Defined what to do if model donot know answer.
+Ask the model if he is an expert.
+Zero shot have no examples,one shot have one example and few shot has few examples given to model.
+Both Open AI and ChatGPT plus are independent from each other.
+In embeddings, higher the dot product higher the similarity with embedding.
+Embeddings are vector representations of words in a high-dimensional space.
+GPT models can generate text. DALL·E model generates images.
+To tune a language model with OpenAI API, You need to create training dataset file in JSONL format.
+ChatGPT Plugins allows you to add amazing new features to ChatGPT through third party applications.
+ChatGPT Advanced Data Analysis allow you to use ChatGPT and analyze information.
+Chain is python class provided by Laqngchain.
+Chauin is used to make reusable text generation pipeline.Itv can be connected together to make a more complex pipeline.
+A chain wraps up a promptTemplate and an LLM.
+
+I want to Understand DevOps and start
+exploring different DevOps Tools. Can you
+suggest a few prompts I can start with?It is an examplr of prompting.
+
+Goal of AI is to create machines that can simulate human level intelligence.
+
+Categorical , Discrete or dimension is represented by Bar Graph.
+Line plot is used to find the trends and scatter plot is used to find the relationship between parameters.
+It is true that scatter plota are used to compare.
+
+
+Recall and precision have to do 6.
+softmax matrix??
+Azure AI Vision and Azure AI services.
+Do practical part also.
+Azure Pre-Trained Models are available under the umbrella of Azure Cognitive Services.
+Azure Machine Learning is used ot build complex ML models.
+Pre Trained models are for every one use.
+Cognitive services is renamed to Azure AI services.
+Azure AI Language is a cloud-based service that includes features for understanding and analyzing text. Azure AI Language includes various features that support sentiment analysis, key phrase identification, text summarization, 
+and conversational language understanding.
+Stemming is a technique in which algorithms are applied to consolidate words before counting them.
+n-grams are multi-term phrases such as "I have" or "he walked".
+Stop words are words that should be excluded from the analysis. 
+Azure AI Content Safety service, which identifies harmful text or images.
+Azure AI Video Indexer, which you can use to detect and identify faces in a video.
+Azure AI Face, which offers pre-built algorithms that can detect, recognize, and analyze faces.
+Endpoint is where you access the service and key is just password.
+Azure AI Language: A resource that enables you to build apps with industry-leading natural language understanding capabilities without machine learning expertise.
+
+
+Cognitive services to make gen ai accessible.
+Computer Vision : To analyze content in images and videos.
+Face API: Detect and identify people and emotions in images.
+Custom Vision: To customize the image to fit into business.
+Azure AI Search provides the infrastructure and tools to create search solutions that extract data from various structured, semi-structured, and 
+non-structured documents.
+If your organization makes the decision to customize Microsoft copilot or develop custom copilots, Microsoft provides two tools that you can use, Copilot Studio and Azure AI Studio.
+
+
+ChatGPT is Open AI Chatbot.
+GEN-AI uses self-supervised learning means learning from the data itself.
+OpenAI-API helps to integrate gen-ai into your apps.
+
+FaceAPI: Advanced Face Detection.
+Facelist is a list of upto 1000 faces.
+LargeFacelist is list upto 1M faces.
+FormRecognizer: Get intelligence from scanned  forms and images.
+
+Text Analytics: Detect sentiment,key phrases and named entities.
+Translator: Translate to/from 90 languages.
+Speech Service: Speech to text,text to speech,translation and speaker recognition.
+Qna Maker: Conversational questions and answers layer.
+LUIS language: Understanding Intelligent Service.
+ 
+Custom Vision: Create custom models using images.
+
+Custom Vision allows you to create custom models using your own images
+Named Entity Recognition: list of general named entities in a given document - Person, Location, Organization, Quantity, DateTime, URL, Phone Number, IP Address etc
+Custom Vision can be used to create custom image classification model. Computer Vision can be used to detect objects, faces, text etc. in images.
+Cognitive Services bring AI within reach of every developer. AI without building custom models. Does NOT need machine-learning expertise.
+Speech synthesis is converting speech to text.
+You need to normalize your numeric features. The process of normalization brings numeric features to a common scale.
+	
+Feature engineering is the method of creating new features based on the existing ones.
+AUC value should be 1.
+
+Brand detection is a specialized mode of object detection that uses a database of thousands of global logos to identify commercial brands in images or video.
+
+Stemming reduces the word to base form, whereas lemmization also but converts into meaningful form.
+
+AutoML,Azure ML Designer.
+In Azure we can choose computer vision service or cognitive services.
+Cognnitive services include many other services under one umbrella.
+All services requires key and an endpoint.
+Ther is computer vision and custom vision.
+Face service can recognize human in an image,needs to be trained on your own data, to compare one face against known face ,to identify if they belong 
+to same person.
+In language model ,we can build our own dict of words.
+Speech recognition: the ability to detect and interpret speech.
+Speech synthesis: the ability to generate spoken output.
+Language Serice is of the Azure services that include key phrase extraction, entity detection, and 
+sentiment analysis.
+LLMs are for text and Diffusion models are for images.

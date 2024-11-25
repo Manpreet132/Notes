@@ -1,0 +1,242 @@
+This is a phenomenon called overfitting, where a model matches the training data almost perfectly, but does poorly in validation and other new data. 
+On the flip side, if we make our tree very shallow, it doesn't divide up the houses into very distinct groups.
+When a model fails to capture important distinctions and patterns in the data, so it performs poorly even in training data, that is called 
+underfitting.At an extreme, if a tree divides houses into only 2 or 4, each group still has a wide variety of houses. Resulting predictions may be 
+far off for most houses, even in the training data (and it will be bad in validation too for the same reason).
+The random forest uses many trees, and it makes a prediction by averaging the predictions of each component tree. It generally has much better 
+redictive accuracy than a single decision tree and it works well with default parameters.
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import mean_absolute_error
+skicit learn gives error with data having missing values.
+Bias means assumption and variance means training on different datasets.
+Accuracy vs Precision.
+
+In SCaling , we are changing range of data and in normalization we are changing shape of ditribution of data.
+
+Lists are mutable ,tuple is immutable. Set is unordered also.List is used for structured data and Dictionary is used for unctructures data.Dictionaries are also unordered.
+random.seed() makes fixed thing.
+import dataetime : datetime.datetime.now() 
+In exception part , else part will work with try , final part will work for sure.
+per function converts to the list. Arraysnumpy cannot be added of different sizes.
+
+Probability:
+Condn probability is the probability of occurence of event A when another event B in relation to A has already occured.
+This means that probability of A depends on event B.
+
+Statistics:
+Statistics is of 2 types: descriptive and inferential.
+Types of Data:
+Based on sources: Primary and Secondary data.
+Based on organisation: Raw data nad Classified data.
+Based on Values: Qualitative and Quantitative data.
+Qualitativedata is of 2 types:
+Nominal data: It cannot be ordered.
+Ordinal data: We can make order,like wealth status,performance in exam.
+Quantitativedata is of 2 types:
+Discrete Data
+Continuous Data.
+Based on variables : Univariate,Bivariate and Multivariate data.
+coff. of variation=(sd/mean)*100
+pearson coffecient of skewness=(mean-mode)/sd or 3*(mean-mode)/sd
+
+
+Probability Distribution: It is the possible values a variable can take and how frequently they occur.
+
+Continuous Uniform Distribution:
+It is similar to discrete uniform distribution , but it has specified ranfe of values.Equal probability within specified range.
+It assigns equal probabilities to values within specified range.
+Probability Density Function=f(x)=1/(b-a),a<=x<=b.,CDF = f(x)=(x-a)/(b-a).
+	Mean=(a+b)/2,Variance=(b-a)**2/12
+
+Exponentaial distribution predicts the amount of waiting time until next event.(i.e. success,failure ,arrival).
+lamvda>0 is the parameter of distribution often called rate parameter.
+Mean=1/lambda and variance=1/(lambda)**2
+
+
+
+Matrix:
+A square matrix is singular , if its determinant=0.
+If a*b=i=b*a, then b is called inverse of a.
+If determinant of matrix=0, then it is called singular matrix.
+ank of the matrix cannot exceed its number of rows and columns.
+Commutative Law:A+B=B+A.
+Assosciative Law: A+(B+C)=(A+B)+C.
+Existence of identity matrix: A+O=O+A=A.
+In matrix multiplication , if AB is defined ,then BA might not be defined.
+A matrix is in row-echolean form when it satisfies the following conditions:
+The first non-zero element in each row ,called leading entry , is 1.
+Each leading entry is in a cloumn to the right of leading entry in previous row.
+Row with all zero elements ,if any , are rows having non zero element.
+a.b=abcoso
+axb=absin0
+Derivative:
+Limit exist when LHL=RHL.
+When derivative of function becomes 0, there we can find maxima and minima.
+Del operator is vector differential operator used in vector calculus.
+Del operator has direction but not magnitude , so it is called not true vector.
+Divergence = delx E.
+Curl = Del.E
+Solenoidal vectors are those whose divergence=0.
+
+Perceptron is basic building block of Artificial Neural Network.
+It takes set of inputs, applies weights to inputs and sums them up and then pass the result through activation function to produce output.
+For equation of line:
+Consistent: At least one solution.
+Inconsistent: Means no solution as lines are parallel.
+Singular: Infinitely many solutions as lines overlap with each other.
+Singular Matrix is a square matrix whose deteminant is 0 and non invertible , otherwise non singular matrix.
+A symmetric matrix is a matrix whose transpose is equal to its original matrix.
+A skew matrix is a matrix whose transpose is equal to negative of that matrix.
+Eigenvalues and inverse of matrix?
+When Mean=0 and sigma=1, then normal distribution is called standard normal distribution,it is widely used in hypothesis testing and confidence
+interval estimation.
+In calculus partial differentiaition deals with functions of multiple variables .For a func() f(x,y,z,...),the partial derivative with respect
+to x is derivatiove of func() with respect to x , keeping all other varibles constant.
+Gradinet Descent is MACHINE LEARNING ALGORTIHM.
+Partial Differentiation measures how a function changes when one variable is changed while keepoing other variabkle constant.
+
+Point estimates are estimate of population parameters based on sample data,For eg. the avg. height of a random sample can be used to estimate
+the average height of large population.
+Interval estimates are range of possible values for a population parameter.These ranges called interval estimates.
+Confidence interval is a range where we are certain that the true value exists.
+The Confidence Level describes the uncertainity assosciated with a sampling method.
+Formula for confindece interval=100(1-alpha).
+Margin of error=critical value * std.
+ci=sample statistics+-margin of error.
+inplace=True, means it is permanently set.
+Median works when we have an outlier in dataset.
+
+Probability distribution is a fundamental concept in probability theory and statistics, providing a mathematical description of the likelihood of 
+different outcomes in a random experiment or process.
+The Probability Function associated with Discrete Random Variable is called as Probability Mass Function.
+The Probability Function associated with Continuous Random Variable is called as Probability Density Function.
+The Discrete Uniform Distribution is the probability distribution where probability of each possible outcome is the same, and there is a finite number
+ of outcomes.Here mean=(n+1)/2 and variance=(n^2_-1)/12.
+The binomial distribution is aptly named for its association with binomial experiments, which consist of a fixed number of independent and identical 
+trials, each resulting in one of two outcomes: success or failure. Key elements defining a binomial distribution include the number of 
+trials (denoted as n), the probability of success on a single trial (denoted as p), and the probability of failure (denoted as 1 - p). 
+A Bernoulli trial is a random experiment with only two possible outcomes: "Success" and "Failure". These trials are named after Jacob Bernoulli, 
+a Swiss mathematician. The outcomes are typically denoted as 1 for success and 0 for failure.
+Hypothesis testing helps us to find out which claim is more supported.
+Null Hypothesis: It is basic assumption based on the given information.
+Alternate Hypothesis: It is used in hypothesistesting contrary to null hypothesis.
+Either we reject the null hypothesis or we failed to reject the null hypothesis.
+P Value is the probability for null hypothesis to be true.
+Standard Normal Distribution is also called Normal Distribution.
+Any normal distribution can be converted to standard normal distribution , by converting its value to z value.
+Normalization of data should not contain the data points.
+
+When to use Z-test: smaple should be randomly drawn, sample size>30,std is known.
+
+Incorrectly handling of missing values can lead to biasin dataset.
+Best Parctices:
+Always document how you have decided to handle missing values for future dataset refrence.
+Use a consistent approach to handling missing values across similar datasets.
+
+Avoid using nested or subquery , when you can achieve same result using joins in order for query optimization.
+ 
+
+	
+In Homoscedacity, there should be no relationship between residuals and prediction,to make the model unbiased.
+Residuals should form normal distribution, with mean=0.So, this shows that we are close of achieving error=0.
+
+
+Probability Mass Function is assosciated with discrete random variable.
+Probability Density Function is assosciated with continuous random variable.
+
+Cumulative Density Function is assoscaited with probability distributions.
+
+Where probabilty of each outcome is same , it is called discrete uniform distribution.
+Mean=(n+1)/2,std=(n**2-1)/12.
+
+In Binomial Distribution, each trial has two possible outcomes, succes or failure, it is also discrete distribution.
+mean=np,variance=np(1-p).
+
+Poisson Distribution describe no. of event occur within fixed time or space, it is used in situation where the probability of event occuring is
+small but number of possible events is very large.Mean and Viarinace are lambda ,lamda is avg. no. of events that occur in given interval.
+
+In exponential distribution , probability of an event occuring within a certain time frame decraeses exponentially as time goes on,we use it 
+when er are interested in time it takes for an event to occur,it helps us to  estimate prob. of waiting a certain amount of time based on avg. 
+rate at which buses arrive etc.
+
+z-score is the meaure of how many standard deviations aways a data point is from th mean.Formulae=(z-mean)/sigma.
+
+Standardization is less effected by outliers , while normalization is more.
+
+To delete rows with mising values: data.dropna()
+To delete columns with missing values: data.dropna(axis=1)
+
+
+High bias often leads to underfitting because model is too simplistic to capture the complexity of data, while high variance tends to lead to overfitting,
+because model is too flexible and captures noise along with underlying patterns in data.
+
+Decision tree can handle high dimensional data,by high dimesnsion we mean large dataset with number of features.
+Entropy means uncertainity of random variable,it characterices impurity of an arbitary collection of examples..Higher the entropy,more the information.
+If data is not organized well, it has high entropy, but if its organized it has low entropy,we have to minimize entropy in decision tree.
+If entropy is low, dataset is pure means that most data points belong to the same class,on the other hand if entropy is high dataset is impure because
+it contains mix of different classes.
+During construction of tree , we choose the feature and split point that minimize the entropy in resulting subsets.
+
+Information gain is measure of change in entropy.
+Ginni index is also know as ginni impurity,while entropy measure randomness, ginni index measures the probability of missclassifyinga randomlychooosen
+element in dataset, low ginni_index means high purity.
+
+
+Numpy array is 70 times fater than python lists.
+
+
+nltk stands for Natural Language Toolkit.
+Lemmatization and Stemming are used to find root words,but lemmarization is preffered.
+Vocuablary have unique words.Lesser the vocuab size , easy to train the data.
+
+
+The more pixels we are having, the more clear image will be.(w*h)is the dimensions.
+RGB size images have more values, because we contains 3 more values for each pixel.
+
+Machine Learning doesn't work good on large dataset,it,s accuracy decreases, so deep learning is used for it.
+In city A, people are buying expensive products.
+
+Violinplot is used to analyze multiple columns.
+Cloud_AWS_123
+
+CNN works on image data.
+False Positive is Type-1 error and False Negative is Type-2 error.
+Accuracy=(TP+TN)/Total.
+ErrorRate=1-Accuracy or (FP+FN)/Total.
+Precision=TP/Predicted Yes(TP+FP).
+Recall=TP/Actual Yes(TP+FN).
+Accuracy is how many we got right.
+Precision is out of all predictions we made , how many we got right.
+Recall is out of all truth samples , how many of you got right.
+For precision think of prediction and for recall think about truth as base line.
+Accuracy vs F1 Score?
+Accuracy does not work well on imbalanced dataset , so we take the F1 score.
+Bias refers to the gap between actaul and predicted value by model.
+Variance is how much scattered predicted values are from each other.
+Data Leakage is when Training and testing data overlap with each other.
+
+
+If z value occurs in confidence interval, then null hypothesis is taken.
+In nominal data ranking in not there.
+In ordinal dazta ranking is there.
+Confidence Interval is defined by domain expert.
+If confidence interval is 95% , then significance value will be 0.05.
+
+
+In zand t test , we take for average.
+CHI-SQUARE test we use for categorical values.
+ANNOVA tes we use for variance.
+
+In NLP: Corpus is paragraph,Documents is Sentences, Vocuablary is unique words.
+Each and every word is required to convert into token to form vector database.
+A technique called cosine similarity is used to determine if two vectors have similar directions (regardless of distance), and therefore represent semantically linked words.
+
+Derivative of sigmoid ranges between 0 to 0.25 in range.
+We randomly initialize the values in filters through back proogartion and forward propogation in CNN.
+
+Spacy is faster that nltk on large datasets.
+wordnet library has whole dictionary of english words.
+
+
+
+

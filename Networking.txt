@@ -1,0 +1,14 @@
+OSI (Open Source Interconnection):
+Application layer: The top layer is like the plate , we put everythong on, dealing with how software apps works.Prtovides interfaces for user applicationsto access network services like email, web browsing etc.
+Presentation layer: This layer translates, kind of luike changing the language of data.It deals with data translation encryptionand compressing for application layer executed.Data formatting, encoding encryption,compressing.
+Session layer: It sets up, manages, and ends connection between computers.It establishes , maintainsaqnd terminate connection between applications.Authenticate , manage sessions and reconnections.
+Transport layer: Handles the delivery of data between devices , making sure it gets there reliably.It manages end to endcommunication, ensures reliable data delivery ,message segmentation and handles flow control.
+Network layer: Deals with adressing and routing , a bit like mailing adresses and roads.Itv handles routing addressing, and forwardingof data packets across different networks.
+Data Link layer: Organizes data into packets and manage stheir flow across physical connection. Manages data frames , ensures error-free transmission within local network.Flow and error control on physical layer.
+Physical layer: This is the actual hardware , cables and signals used to send data. It deals with physical connections and transmission of raw data over communication channel, transmission of bit streams.
+
+
+
+Subnetting is a technique in computer network which is used to divide a larger ip network into smaller, more manageable sub-networks or subnets.
+
+  

@@ -1,0 +1,72 @@
+AWS WAF is a web application firewall that lets you monitor the HTTP and HTTPS requests that are forwarded to an Amazon API Gateway API,
+Amazon CloudFront or an Application Load Balancer. HTTP and HTTPS requests are part of the Application layer, which is layer 7.
+
+Fault tolerance is achieved by a scale out operation - A scale out operation adds more instances to an existing pool of instances. This implies,
+there is no single point of failure. If an instance is down, the workload is taken up by other healthy instances. Distributed systems are an example 
+of such scaling.
+
+he AWS Partner Network (APN) is the global partner program for technology and consulting businesses that leverage Amazon Web Services to build solution
+and services for customers.
+
+AWS Config is a service that enables you to assess, audit, and evaluate the configurations of your AWS resources. Config continuously monitors and 
+records your AWS resource configurations and allows you to automate the evaluation of recorded configurations against desired configurations.
+
+AWS Glue is a fully managed extract, transform, and load (ETL) service that makes it easy for customers to prepare and load their data for analytics.
+
+DynamoDB global tables replicate data automatically across your choice of AWS Regions and automatically scale capacity to accommodate your workloads.
+With global tables, your globally distributed applications can access data locally in the selected regions to get single-digit millisecond read and 
+write performance.
+
+AWS CloudTrail logs have encryption by default.
+EC2,RDS,DynamoDB offers reservations to optimize cost , but not s3.
+
+Amazon API Gateway is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale.
+
+Route53 and Global Accelerator helps to stop DDOS attack.
+Each AWS Region consists of a minimum of three Availability Zones (AZ).
+Each Availability Zone (AZ) consists of two or more discrete data centers.
+
+AWS Compute Optimizer recommends optimal AWS resources for your workloads to reduce costs and improve performance by using machine learning to 
+analyze historical utilization metrics. 
+
+AWS Direct Connect is a cloud service solution that makes it easy to establish a dedicated network connection from your premises to AWS. You can use 
+AWS Direct Connect to establish a private virtual interface from your on-premise network directly to your Amazon VPC, providing you with a private, 
+high bandwidth network connection between your network and your VPC. 
+A VPC endpoint enables you to privately connect your VPC to supported AWS services and VPC endpoint services powered by AWS PrivateLink without 
+requiring an internet gateway, NAT device, VPN connection, or AWS Direct Connect connection. Instances in your VPC do not require public IP addresses to communicate with resources in the service. Traffic
+An Internet Gateway is a horizontally scaled, redundant, and highly available VPC component that allows communication between your VPC and the 
+internet.
+AWS Site-to-Site VPN creates a secure connection between your data center or branch office and your AWS cloud resources. This connection goes over 
+the public internet.
+You can use AWS X-Ray to analyze and debug serverless and distributed applications such as those built using a microservices architecture.
+Amazon Pinpoint allows marketers and developers to deliver customer-centric engagement experiences by capturing customer usage data to draw real-time
+insights.
+
+NAT Gateway is managed by AWS.
+The AWS account must be able to operate as a standalone account. Only then it can be removed from AWS organizations.
+Amazon Redshift is a fully-managed petabyte-scale cloud-based data warehouse product designed for large scale data set storage and analysis.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+Access Key ID and Secret Access Key are tied to IAM USER.
+AWS Shield, AWS Web Application Firewall (AWS WAF), and Amazon CloudFront with Amazon Route 53 help mitigate DDoS attacks.
+AmazonLightsail is an easy-to-use cloud platform that offers you everything needed to build an application or website, plus a cost-effective, monthly plan. 
+AWS Local Zones allow you to use select AWS services, like compute and storage services, closer to more end-users, providing them very low latency access to the applications running locally. 
+AWS Wavelength extends the AWS cloud to a global network of 5G edge locations to enable developers to innovate and build a whole new class of applications that require ultra-low latency.
+AWS Compute Optimizer helps you identify the optimal AWS resource configurations, such as Amazon EC2 instance types, Amazon EBS volume configurations,
+and AWS Lambda function memory sizes, using machine learning to analyze historical utilization metrics.
+NACL acts as firewall at subnet level.
+Amazon EventBridge is a service that provides real-time access to changes in data in AWS services, your own applications, and software as a service (SaaS) applications without writing code.
+
+AWS Systems Manager gives you visibility and control of your infrastructure on AWS. Systems Manager provides a unified user interface so you can view
+operational data from multiple AWS services and allows you to automate operational tasks across your AWS resources.
+AWS Step Function lets you coordinate multiple AWS services into serverless workflows. You can design and run workflows that stitch together services
+such as AWS Lambda, AWS Glue and Amazon SageMaker.
+
+Amazon MQ is a managed message broker service for Apache ActiveMQ and RabbitMQ that makes it easy to set up and operate message brokers on AWS.
+Amazon MQ reduces your operational responsibilities by managing the provisioning, setup, and maintenance of message brokers for you. Because Amazon MQ
+connects to your current applications with industry-standard APIs and protocols, you can easily migrate to AWS without having to rewrite code.
+The Acceptable Use Policy describes prohibited uses of the web services offered by Amazon Web Services, Inc. and its affiliates (the “Services”) and
+the website located at http://aws.amazon.com (the “AWS Site”). 
+Tape Gateway, File Gateway and Volume Gateway: These gateways are supported by AWS.
+AWS Global Accelerator is a service that improves the availability and performance of your applications with local or global users. It provides static IP addresses that act as a fixed entry point to your application endpoints.
+ 

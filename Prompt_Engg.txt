@@ -1,0 +1,3 @@
+A prompt is the text we input to AI models when interfacing them.
+Prompt Engineering is the process of discovering prompts which reliably yield useful or desired results.
+Give time to model to think.

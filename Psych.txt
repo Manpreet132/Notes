@@ -1,0 +1,54 @@
+Next candlestick after hammer should be bullish. 
+Hammer can be bullish and bearsish as well.
+Take trade after bullish candle and stoploss below the low of hammer.
+There should be min 20 candles.
+
+When support gets breakdown , avoid taking trade there and try to take the trade during retest of that support. 
+
+Third point in trendline is it's confirmation.
+
+Whenever high open or low close are same, then trend will be in the same direction.
+
+First learn the skill and then capital will be secondary.
+
+First try to protect your capital and the scale it.
+
+Whenever big candles are formed , try to take 50% of it stoploss.
+
+Distribution phase in which , big money sells their shares.
+
+Don't anticipate before the breakout in chart pattern.
+
+It's okay if you have missed the move , don't chase in fomo.
+
+Validity of candles become no value , is there lows are tested.
+
+Fibonacci can be best applied on trend , not on sideways market. Look for 38%,50%(most important) and 61.8%.
+
+
+On the basis of PCR ratio:
+Overbrought: >2
+Bullish: 1.2-1.5
+Neutral: 1
+Bearish: 0.8-0.5
+Oversold: <0.5
+
+Sideways Market: 0.8-1.2
+
+Profit will automatically come if we stay in market.
+
+Market can spend a lot of time in overbrought and oversold zone.
+
+Volume role comes in continuation.
+
+Most of the times , there is low volume in consolidation.
+
+Always look for high quality trades in scalping.
+
+If you are discipline , money willl automatically come.
+
+Change in OI represents more contracts that are added.
+
+If the trader is dicy , he will not be able to take big positions , either ride a profit or take a stoploss.
+
+VIX is proportional to option premiums prices.

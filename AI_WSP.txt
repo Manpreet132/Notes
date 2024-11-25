@@ -1,0 +1,10 @@
+Tokens are pieces of words used to NLP. It is numeric representation of text.For English text, 1 token is approximately 4 charactersw or 0.075 words.
+
+Temperature concept in NLP?
+
+Embeddings: A set of models that can convert text into numerical vector form to fascilitate text similarity.
+
+
+In Data Science : We only need to know Linear Algebra, Calculus and Statistics for Mathematics part.
+
+3rd place to 3 digits

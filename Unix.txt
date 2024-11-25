@@ -1,0 +1,10 @@
+Kernel is used to establish communication between hardware and os.
+Kernel is reponsible for device,memory,process mgmt and handling system calls.
+First learn one tool , understand it , then leaen other tool.
+Using vi , we can create a file and write inside a file.
+cat is used for opening a file.
+nproc: number of cpus.
+df -h : disk size used.
+A cron job in Linux is like a scheduled task or a reminder that tells the computer to automatically run certain commands or scripts at specific times 
+or intervals.
+#!/bin/bash is the tsarting of script.

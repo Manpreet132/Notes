@@ -1,0 +1,29 @@
+LLMS are for text and Diffusion models are for images.
+Token can be thought as pieces of words , before the API processes the prompts input is broken into tokens.
+Every LLM has a token limit.
+Once token limit is reached , then LLM can never understand what you have talked previously.
+You should give custom instructions to gpt before texting.
+Chain of thought prompting is we provide examples , instructions on how model needs to think.
+Step-by-step with example makes gpt output better.
+Self consistency is an approach of asking same thing multiple times and takes the majority result as the final answer.
+Semantic assosciation in prompting.
+
+RAG: Retrieval Augmented Generation.
+Tell ChatGPT to forget everything above the chat, this will start new conversation and also new context, token limit will start from zero again.
+
+Semantic prompting?
+Use self criticism to improve the output of prompt.
+Use of ChatGPT for Teams?
+ChatGPT can make mistakes , so always cross check the output produced.
+ChatGPT can trigger emotions like fear,anger joy,happiness in reader.
+AI content detector will detect whether the content is AI generated or not.
+Tokens are pieces of words used to NLP. It is numeric representation of text.For English text, 1 token is approximately 4 charactersw or 0.075 words.
+
+Temperature concept in NLP?
+
+Embeddings: A set of models that can convert text into numerical vector form to fascilitate text similarity.
+
+
+In Data Science : We only need to know Linear Algebra, Calculus and Statistics for Mathematics part.
+
+3rd place to 3 digits 
